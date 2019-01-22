@@ -157,6 +157,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         SensorManager.getRotationMatrix(rorate,null,accValues,magValues);
         SensorManager.getOrientation(rorate,value);
         Log.d("aaa"," "+B);
+        //加时间戳
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SSS");
         String str = sdf.format(new Date());
         message = Bx +" "+ By +" "+Bz+" "+B+" "+VecotorValues[3]+" "+VecotorValues[0]+" "+VecotorValues[1]+" "+VecotorValues[2]+"\n";
